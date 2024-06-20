@@ -1,0 +1,66 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+:root {
+
+    --primary-color: #3D405B; /* Delft Blue */
+    --secondary-color: #81B29A; /* Cambridge Blue */
+    --accent1-color: #E07A5F; /* Burnt Sienna */
+    --accent2-color: #F4F1DE; /* Eggshell */
+  
+
+    --heading-font: 'Montserrat', sans-serif;
+    --paragraph-font: 'Roboto', sans-serif;
+  
+
+    --nav-background-color: var(--primary-color);
+    --nav-link-color: var(--accent2-color);
+    --nav-hover-link-color: var(--secondary-color);
+    --nav-hover-background-color: var(--accent1-color);
+  }
+  
+  body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px; 
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var (--primary-color)
+  }
+  
+  header {
+    padding: 20px;
+    background-color: var(--primary-color);
+  }
+
+  p {
+    padding: 25px;
+  }
+
+  nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+  }
+  
+  nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem
+  }
+  
+  nav a:link, nav a:visited {
+    color: var(--nav-link-color); /* Use nav-link-color for default link color */
+    background-color: transparent; /* Remove background color for default state */
+  }
+
