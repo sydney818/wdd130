@@ -11,12 +11,12 @@ body {
 
 :root {
 
-    --primary-color: #3D405B; /* Delft Blue */
-    --secondary-color: #81B29A; /* Cambridge Blue */
-    --accent1-color: #E07A5F; /* Burnt Sienna */
-    --accent2-color: #F4F1DE; /* Eggshell */
+    --primary-color: #3D405B; 
+    --secondary-color: #81B29A; 
+    --accent1-color: #E07A5F; 
+    --accent2-color: #F4F1DE;
+ 
   
-
     --heading-font: 'Montserrat', sans-serif;
     --paragraph-font: 'Roboto', sans-serif;
   
@@ -35,7 +35,7 @@ body {
   
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
-    color: var (--primary-color)
+    color: var(--accent2-color);
   }
   
   header {
