@@ -11,10 +11,10 @@ body {
 
 :root {
 
-    --primary-color: #3D405B; 
-    --secondary-color: #81B29A; 
-    --accent1-color: #E07A5F; 
-    --accent2-color: #F4F1DE;
+    --primary-color: #4A6C6F; 
+    --secondary-color: #E07A5F; 
+    --accent1-color: #6A936B; 
+    --accent2-color: #9E9E9E;
  
   
     --heading-font: 'Montserrat', sans-serif;
@@ -62,5 +62,10 @@ body {
   nav a:link, nav a:visited {
     color: var(--nav-link-color); /* Use nav-link-color for default link color */
     background-color: transparent; /* Remove background color for default state */
+  }
+
+  nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
   }
 
