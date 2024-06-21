@@ -72,11 +72,12 @@ footer {
 aside {
     width: 20em;
     text-align: center;
+    position: relative;
 }
 
 aside h2 {
     position: absolute;
-    top: 506px; /* Adjust as needed based on layout */
-    left: 150px; /* Adjust as needed based on layout */
+    top: 25px; /* Adjust as needed based on layout */
+    left: 130px; /* Adjust as needed based on layout */
     /* color: white; */
 }
