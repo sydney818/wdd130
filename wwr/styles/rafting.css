@@ -88,6 +88,7 @@ header nav a {
 
 footer nav.sociallinks a {
     text-decoration: none;
+    margin-right: 1px;
 }
 
 
