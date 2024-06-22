@@ -86,4 +86,8 @@ header nav a {
     margin-right: 1px;
 }
 
+footer nav.sociallinks a {
+    text-decoration: none;
+}
+
 
