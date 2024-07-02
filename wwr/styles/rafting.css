@@ -37,6 +37,34 @@ h1, h2 {
     color: var(--primary-color);
 }
 
+/* Header Section */
+
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 20px;
+    padding: 7px 0;
+}
+
+header .logo {
+    width: 150px;
+}
+
+/* Nav Section */
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin-right: 1px;
+}
+
 
 /* Hero Section */
 .hero {
@@ -78,17 +106,88 @@ h1, h2 {
     margin: 0 0 1rem 1rem;
 }
 
-/* Nav Section */
 
-header nav a {
-    color: var(--primary-color);
-    text-decoration: none;
-    margin-right: 1px;
+/* History Section */
+.history {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.history h2 {
+    text-align: center;
+}
+
+.history-grid {
+    display: grid;
+    grid-template-columns: 1fr 150px 1fr;
+    gap: 20px;
+    align-items: center; 
+}
+
+.history img {
+    width: 100%;
+    height: auto;
+    justify-self: center; 
+}
+
+.history p {
+    text-align: justify; 
+    padding: 10px; 
+}
+
+.p1 {
+    grid-column: 1;
+    font-size: 1rem; 
+}
+
+.p2 {
+    grid-column: 3;
+}
+
+.adventure {
+    text-align: center;
+}
+
+.adventure-images {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    justify-items: center; /* Centers the figures horizontally */
+}
+
+.adventure-images figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.adventure-images img {
+    width: 100%; /* Ensures the image fills the figure */
+    height: 100%;
+}
+
+.adventure-images figcaption {
+    margin-top: 5px; /* Adds space between image and caption */
+    font-size: 0.9rem;
+}
+
+
+/* Footer section */
+footer {
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
+    padding: 10px;
 }
 
 footer nav.sociallinks a {
     text-decoration: none;
-    margin-right: 1px;
+    margin-right: 5px;
 }
 
-
+footer nav.sociallinks img {
+    width: 30px;
+    height: 30px
+}
