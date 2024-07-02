@@ -57,6 +57,7 @@ nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    font-weight: 800;
 }
 
 header nav a {
