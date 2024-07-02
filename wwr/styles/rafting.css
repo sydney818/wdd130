@@ -119,7 +119,7 @@ header nav a {
 
 .history-grid {
     display: grid;
-    grid-template-columns: 1fr 150px 1fr;
+    grid-template-columns: 1fr 150px 1fr; 
     gap: 20px;
     align-items: center; 
 }
@@ -152,7 +152,7 @@ header nav a {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
-    justify-items: center; /* Centers the figures horizontally */
+    justify-items: center;
 }
 
 .adventure-images figure {
@@ -162,12 +162,12 @@ header nav a {
 }
 
 .adventure-images img {
-    width: 100%; /* Ensures the image fills the figure */
+    width: 100%; 
     height: 100%;
 }
 
 .adventure-images figcaption {
-    margin-top: 5px; /* Adds space between image and caption */
+    margin-top: 5px; 
     font-size: 0.9rem;
 }
 
