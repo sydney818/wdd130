@@ -94,7 +94,7 @@ aside h2 {
 
 header, footer {
     margin: 0 auto;
-    max-width: 840px;
+    max-width: var(--max-container-width);
 
 }
 
