@@ -11,7 +11,7 @@ body {
     padding: 20px;
     border: solid #3e8bac;
     border-style: inset;
-    border-width: 10px 10px;
+    border-width: 6px 6px;
     background-color: #f4f2f2;
   }
 
@@ -56,6 +56,15 @@ select {
     margin-bottom: 10px; 
     border: 1px solid #ccc; 
     font-size: 14px; 
+}
+
+input[type="number"] {
+    width: 20%; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    font-size: 14px; 
+
 }
 
   input[type="submit"] {

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Simple HTML / css quiz created for WDD|130 class">
+    <meta name="author" content="Sydney Anderson">
     <title>Sydney Anderson | Quiz Form</title>
     <link rel="stylesheet" href="styles/quiz.css">
 </head>
@@ -14,41 +15,40 @@
     <main>
         <form>
             <fieldset>
-            <div class="question1">
-                <label for="q1"><span class="question-number">1.</span>What does HTML stand for?</label>
-                <input type="text" id="q1" name="q1">
-              </div>
-              
-              <div class="question">
+                <div class="question1">
+                    <label for="q1"><span class="question-number">1.</span>What does HTML stand for?</label>
+                    <input type="text" id="q1" name="q1">
+                </div>
                 
-                <label for="q2"><span class="question-number">2.</span>What does CSS stand for?</label>
-                <textarea id="q2" name="q2" rows="2"></textarea>
-              </div>
-              
-              <div class="question">
-                <label for="q3"><span class="question-number">3.</span>Which property is used to change the font size in CSS?</label>
-                <select id="q3" name="q3">
-                    <option value="a">font-family</option>
-                    <option value="b">font-size</option>
-                    <option value="c">font-weight</option>
-                    <option value="d">Other</option>
-                </select>
-              </div>
-              
-              <div class="question">
-                <label for="q4"><span class="question-number">4.</span>How many heading tags are there in HTML?</label>
-                <input type="number" id="q4" name="q4" min="1" max="10">
-              </div>
-              
-              <div class="question">
-                <input type="submit" value="Submit Quiz">
-              </div>
+                <div class="question">
+                    
+                    <label for="q2"><span class="question-number">2.</span>What does CSS stand for?</label>
+                    <textarea id="q2" name="q2" rows="2"></textarea>
+                </div>
+                
+                <div class="question">
+                    <label for="q3"><span class="question-number">3.</span>Which property is used to change the font size in CSS?</label>
+                    <select id="q3" name="q3">
+                        <option value="a">font-family</option>
+                        <option value="b">font-size</option>
+                        <option value="c">font-weight</option>
+                        <option value="d">Other</option>
+                    </select>
+                </div>
+                
+                <div class="question">
+                    <label for="q4"><span class="question-number">4.</span>How many heading tags are there in HTML?</label>
+                    <input type="number" id="q4" name="q4" min="1" max="10">
+                </div>
+                
+                <div class="question">
+                    <input type="submit" value="Submit Quiz">
+                </div>
+              </fieldset>
         </form>
     </main>
     <footer>
         <p>&copy;2024 | HTML and CSS Quiz | Sydney Anderson</p>
     </footer>
-
-    
 </body>
 </html>
