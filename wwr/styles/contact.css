@@ -232,11 +232,11 @@ header nav a {
 
 /* Footer section */
 .site-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 200px;
     margin-top: 15px;
     border-top: 1px solid #000;
+    text-align: center;
     padding: 10px;
 }
 
@@ -247,7 +247,5 @@ footer nav.sociallinks a {
 
 footer nav.sociallinks img {
     width: 30px;
-    height: 30px;
+    height: 30px
 }
-
-/* fix footer */
