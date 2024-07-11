@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Us Page assignment for the Rafting Adventures website WDD130 class">
+    <meta name="author" content="Sydney Anderson">
+    <title>Rafting Adventures | Contact Us</title>
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+    <header>
+        <img src="images/rafting-logo1.jpg" alt="Rafting Site Logo" width="150">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Rafting Trips</a>
+            <a href="contact.html">Contact Page</a>
+        </nav>
+    </header>
+    <main>
+        <div class="contact-us">
+            <section>
+                <img src="images/rafting8.jpg" alt="Landscape">
+                <h2>Rafting Adventures - Contact Us</h2>
+                <article>
+                    <p>Address: 123 River Road, Adventure City</p>
+                    <p>Phone: +1-888-567-8901</p>
+                    <p>Email: <a href="mailto:">info@raftingadventures.com </a></p>
+                </article>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d723.8333451175832!2d-110.77267457786323!3d43.47451255804732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1720567875294!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+        </div>
+
+        <section>
+            <h2 class="happy-employee">Meet Our Team</h2>
+            <div class="employee-images">
+                <figure class="small-im1">
+                    <img src="images/happye1.jpg" alt="Employee 2">
+                    <figcaption>Team of Lead</figcaption>
+                </figure>
+                <figure class="wider-image"> 
+                    <img src="images/rafting1.jpg" alt="Employee 1">
+                    <figcaption>Team of Specialists</figcaption>
+                </figure>
+                <figure class="small-im1">
+                    <img src="images/happye3.jpg" alt="Employee 3">
+                    <figcaption>Newest Member</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="submit.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <fieldset>
+                    <legend>Reason for your visit:</legend>
+                    <label><input type="radio" name="purpose" value="General Inquiry" checked> General Inquiry</label><br>
+                    <label><input type="radio" name="purpose" value="Reservation Question"> Reservation Question</label><br>
+                    <label><input type="radio" name="purpose" value="Website Suggestion"> Website Suggestion</label>
+                </fieldset>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <label><input type="checkbox" name="newsletter" value="subscribe" checked> Please subscribe me to the monthly newsletter</label>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <footer class="site-footer">
+            <p>&copy; 2024 | Rafting Adventure | Sydney Anderson</p>
+            <nav class="sociallinks">
+                <a href="https://twitter.com">
+                    <img src="images/twitter.png" alt="Twitter">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="images/instagram.png" alt="instagram">
+                </a>
+                <a href="https://www.youtube.com">
+                    <img src="images/youtube.png" alt="youtube">
+                </a>
+            </nav>
+        </footer>
+    </main>
+</body>
+</html>
