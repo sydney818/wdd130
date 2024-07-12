@@ -215,14 +215,14 @@ footer nav.sociallinks img {
     height: auto;
 }
 
-h1 {
+.contact-us h2 {
     position: absolute;
     text-align: center;
-    top: 180px;
+    top: 50px;
     left: 6px;
     width: 100%;
     font-size: 2rem;
-    color: #40798C; 
+    color: white; 
 }
 
 .contact-us article {
