@@ -199,16 +199,16 @@ footer nav.sociallinks img {
 
 /* contact-us section */
 
-/* h1 {
+h1 {
     position: absolute;
     text-align: center;
     top: 180px;
-    left: 6px;
-    width: 100%;
+    /* left: ; */
+    /* width: 100%; */
     font-size: 2rem;
     color: #40798C;
     margin: 0 auto; 
-} */
+}
 
 
 .contact-us {
@@ -229,9 +229,9 @@ footer nav.sociallinks img {
 
 .contact-us h2 {
     position: absolute;
-    text-align: center;
+    text-align: left;
     top: 50px;
-    left: 6px;
+    left: 80px;
     width: 100%;
     font-size: 2rem;
     color: white; 
