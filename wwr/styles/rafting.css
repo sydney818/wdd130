@@ -8,18 +8,21 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: var(--paragraph-font);
     max-width: 960px;
-    padding: 20px;
+    margin: auto;
+    padding: .5rem;
 }
 
 :root {
 
-    --primary-color: #40798C; 
-    --secondary-color: #eeecec; 
-    --accent1-color: #70A9A1; 
-    --accent2-color: #0B2027;
+    --primary-color: #0B2027;
+    --secondary-color: #738f22; 
+    /* --secondary-color: #eeecec; */
+    --accent1-color: #268F90;  
+    --accent2-color: #E26E3C;
  
   
     --heading-font: 'Montserrat', sans-serif;
@@ -34,7 +37,7 @@ body {
 
 h1, h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: #0B2027;
 }
 
 /* Header Section */
@@ -45,10 +48,12 @@ header {
     align-items: center;
     gap: 20px;
     padding: 7px 0;
+  
 }
 
 header .logo {
     width: 150px;
+
 }
 
 /* Nav Section */
@@ -66,6 +71,12 @@ header nav a {
     margin-right: 1px;
 }
 
+header nav a:hover {
+    color: white; 
+    background-color: #268F90;
+    padding: 5px; 
+    border-radius: 5px;
+} 
 
 /* Hero Section */
 .hero {
@@ -81,7 +92,7 @@ header nav a {
     position: absolute;
     top: 25px; /* Adjust as needed based on layout */
     left: 6px;
-    width: 100%;
+    width: 98%;
     font-size: 2.5rem;
     background-color: rgba(0, 0, 0, 0.4);
     color: white;
@@ -181,6 +192,7 @@ header nav a {
     border-top: 1px solid #000;
     text-align: center;
     padding: 10px;
+    margin-right: 10px;
 }
 
 footer nav.sociallinks a {
@@ -199,27 +211,22 @@ footer nav.sociallinks img {
 
 /* contact-us section */
 
-h1 {
+.river-adv h1 {
     position: absolute;
     text-align: center;
-    top: 180px;
-    /* left: ; */
-    /* width: 100%; */
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 2rem;
-    color: #40798C;
-    margin: 0 auto; 
-}
+    color: #0B2027;
+    z-index: 10;
 
+}
 
 .contact-us {
     position: relative;
     text-align: center;
     color: white;
-    background-image: url('images/rafting8.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 40px 20px;
 }
 
 .contact-us .background-image {
@@ -230,8 +237,8 @@ h1 {
 .contact-us h2 {
     position: absolute;
     text-align: left;
-    top: 50px;
-    left: 80px;
+    top: 98px;
+    left: 30px;
     width: 100%;
     font-size: 2rem;
     color: white; 
@@ -240,8 +247,8 @@ h1 {
 .contact-us article {
     position: absolute;
     text-align: left;
-    top: 100px;
-    left: 80px;
+    top: 150px;
+    left: 20px;
     width: 100%;
     font-size: 1rem;
     color: white; 
@@ -256,7 +263,7 @@ h1 {
 }
 
 /* Company Info */
-#company-info p {
+.company-info p {
     margin: 0.5rem 0;
 }
 
@@ -269,20 +276,33 @@ h1 {
 .map-container iframe {
     width: 100%;
     height: 100%;
-    border: 0; 
+    border-style: solid;
+    border-color: #738f22;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #0B2027;
+
 } 
 
 /* Employee images */
 .happy-employee {
     text-align: center;
     padding: 10px;
+    border-style: solid;
+    border-color: #268F90;
+    border-width: 3px;
+    margin-inline: 35%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px #0B2027;
 }
 
 .employee-images {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5px;
-    justify-items: center;
+    justify-items: center; 
+
 }
 
 .employee-images figure  {
@@ -308,16 +328,18 @@ h1 {
 
 .contact-form {
     margin-top: 40px;
-    background-color: var(--secondary-color);
+    background-color: #eeecec;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px #268F90;
 }
 
 .contact-form h2 {
     margin-bottom: 10px;
     text-align: center;
-    color: var(--primary-color);
+    color: #0B2027;
+    text-decoration: underline;
+    text-decoration-color: #268F90;
 }
 
 .contact-form form {
@@ -335,20 +357,20 @@ h1 {
 .contact-form textarea {
     padding: 10px;
     margin-top: 0.5rem;
-    border: 1px solid var(--primary-color);
+    border: 1px solid #0B2027;
     border-radius: 5px;
     font-size: 1rem;
 }
 
 .contact-form button {
-    background-color: var(--primary-color);
+    background-color: #E26E3C;
     color: white;
     padding: 10px;
     margin-top: 20px;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
     font-size: 1rem;
+    width: 20%;
 }
 
 .contact-form button:hover {
@@ -372,12 +394,15 @@ h1 {
 
 .book h1 {
     position: absolute;
-    text-align: left;
-    top: 220px;
-    /* right: 400px; */
-    left: 100px;
-    width: 300px;
-    color: white
+    text-align: center;
+    top: 170px;
+    left: 400px;
+    width: 500px;
+    color: white;
+    font-size: 2rem;
+    background-color: rgba(226, 110, 60, 0.534);
+    width: 30%;
+
 
 }
 
@@ -387,39 +412,65 @@ h1 {
 }
 
 .cta-contact h2{
+    
     margin-top: 10px;
+    margin-left: 20px;
+    font-size: 2rem;
+    border-top-style: solid;
+    border-color: #268F90;
+    width: 40%
+
 }
 
 .cta-contact p {
     /* margin-left: 80px; */
     margin-top: 10px;
     margin-bottom: 20px;
+    margin-left: 20px;
+    border-top-style: solid;
+    border-color: #E26E3C;
+    width: 43%
 }
+
 
 /* trip info */
+.trip-descriptions{
+    text-align: center;
+}
 
 .trip-descriptions h2{
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin-top: 20px;
     text-align: center;
     font-size: 2rem;
-    text-shadow: 3px 3px 5px #40798C;
+    color: #0B2027;
+    background-image: linear-gradient(#738f22, #eeecec 50%, #738f22);
+    border-radius: 5px;
+    display: inline-block;
+    padding: 5px;
 }
+
+
 
 .trip-images {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr); 
     justify-items: center;
+    gap: 10px;
+    margin-top: 20px;
 }
 
 .trip-images figure {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: left;
-    background-color: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    background-color: #eeecec;
     border-style: outset;
     border-radius: 5px;
+    width: 100%;
+    box-shadow: 0 4px 8px #738f22;
+
 } 
 
 .trip-images img {
@@ -446,31 +497,228 @@ h1 {
     text-align: center;
     margin-top: 20px;
     color: black;
+    text-decoration: underline;
+    text-decoration-color:  #268F90;
+    text-decoration-thickness: 3px;
 }
 
-
 table {
-    width: 100%;
+    width: 90%;
     border-collapse: collapse;
-    margin: 20px 0;
+    margin: 20px auto;
     font-size: 18px;
     text-align: left;
-    border-radius: 1px;
+    background-image: linear-gradient(#E26E3C, #eeecec 60%, #E26E3C);
+    border-radius: 5px;
+
 }
 
 table thead tr {
-    background-color: #40798C;
-    color: #ffffff;
+    /* background-color: #eeecec; */
+    /* color: #E26E3C; */
     text-align: left;
-    font-weight: bold;
+    /* border-left: 3px solid #268F90;
+    border-right: 3px solid #268F90;
+    border-top: 3px solid #268F90;
+    border-bottom: 3px solid #268F90; */
+    color: white
 }
 
-table th, table td {
+table th,
+table td {
     padding: 12px 15px;
-    border: 1px solid #0B2027;
 }
+
+table tbody tr {
+    /* border-left: 3px solid #268F90;
+    border-right: 3px solid #268F90; */
+
+}
+
+/* table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+} */
+
+table tbody tr:last-of-type {
+    /* border-bottom: 2px solid #268F90; */
+}
+
+
 
 
 tr:hover {
+    background-color: var(--accent1-color);
+    color: white
+}
+
+/* book now button */
+
+.trip-images .book-now {
+    background-color: #738f22;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.trip-images .book-now:hover {
+    background-color: #268F90;
+}
+
+/* home page updates */
+
+/* Newsletter Signup Form */
+
+.thrill {
+    position: relative;
+    background-size: cover;
+    height: 275px;
+    width: 98%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.thrill h1 {
+    position: absolute;
+    top: 25px; /* Adjust as needed based on layout */
+    left: 6px;
+    width: 100%;
+    font-size: 2.5rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 10px;
+}
+
+.newsletter-signup {
+    margin-top: 80px;
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.newsletter-signup h2 {
+    color: #0B2027;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.newsletter-signup form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter-signup label {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #0B2027;
+    text-align: left;
+    width: 100%;
+    max-width: 400px;
+}
+
+.newsletter-signup input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #738f22;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.newsletter-signup button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #E26E3C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-signup button:hover {
+    background-color: #268F90;
+}
+
+.cta {
+    margin-top: 10px;
+
+}
+
+.cta p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.rafting{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.rafting h2{
+    background-image: linear-gradient(#738f22, #eeecec 50%, #738f22);
+    border-radius: 5px;
+    display: inline-block;
+    padding: 5px;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+    align-items: center; 
+    margin-top: 10px;
+}
+
+.grid-layout figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
     background-color: #eeecec;
+    border-style: outset;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 0 4px 8px #738f22;
+
+}
+
+
+.grid-layout img {
+    width: 100%;
+    height: auto;
+    justify-self: center; 
+}
+
+.grid-layout p {
+    text-align: justify; 
+    padding: 10px; 
+}
+
+
+/* link updates */
+
+/* Global link color */
+a {
+    color: #E26E3C;
+    text-decoration: none;
+    text-decoration-thickness: 4px;
+}
+
+/* Hover state for links */
+a:hover {
+    color: #268F90;
+    
 }
