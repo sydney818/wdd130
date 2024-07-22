@@ -509,41 +509,17 @@ table {
     margin: 20px auto;
     font-size: 18px;
     text-align: left;
-    background-image: linear-gradient(#E26E3C, #eeecec 60%, #E26E3C);
-    border-radius: 5px;
-
 }
 
 table thead tr {
-    /* background-color: #eeecec; */
-    /* color: #E26E3C; */
     text-align: left;
-    /* border-left: 3px solid #268F90;
-    border-right: 3px solid #268F90;
-    border-top: 3px solid #268F90;
-    border-bottom: 3px solid #268F90; */
-    color: white
+    color: #0B2027
 }
 
 table th,
 table td {
     padding: 12px 15px;
 }
-
-table tbody tr {
-    /* border-left: 3px solid #268F90;
-    border-right: 3px solid #268F90; */
-
-}
-
-/* table tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
-} */
-
-table tbody tr:last-of-type {
-    /* border-bottom: 2px solid #268F90; */
-}
-
 
 
 
@@ -556,7 +532,7 @@ tr:hover {
 
 .trip-images .book-now {
     background-color: #738f22;
-    color: white;
+    color: #0B2027;
     padding: 10px 20px;
     margin-top: 10px;
     border: none;
@@ -569,6 +545,7 @@ tr:hover {
 
 .trip-images .book-now:hover {
     background-color: #268F90;
+    color: white;
 }
 
 /* home page updates */
@@ -641,11 +618,10 @@ tr:hover {
     margin-top: 20px;
     padding: 10px 20px;
     background-color: #E26E3C;
-    color: white;
+    color: #0B2027;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 .newsletter-signup button:hover {
@@ -713,7 +689,7 @@ tr:hover {
 
 /* Global link color */
 a {
-    color: #E26E3C;
+    color: #b95a31;
     text-decoration: none;
     text-decoration-thickness: 4px;
 }
